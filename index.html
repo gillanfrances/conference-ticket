@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+</head>
+<body>
+
+  <img src="/assets/images/logo-full.svg" alt="Coding Conference 2025 logo"/>
+
+  <h2>Your Journey to Coding Conf 2025 Starts Here!</h2>
+
+  <p>Secure your spot at next year's biggest coding conference.</p>
+  <div class="form">
+  <label for="avatar">Upload Avatar</label>
+    <div class="upload" id="drop-zone">
+      <div id="upload-content">
+        <p class="fileupload">
+          <img src="assets/images/icon-upload.svg" alt="Upload" class="img" /><br>
+          Drag and drop or click to upload
+        </p>
+      </div>
+      <input type="file" id="avatar" accept="image/png, image/jpeg">
+    </div>
+  <p class="validation-text"><img src="assets/images/icon-info.svg" alt="Info icon" />Upload your photo (JPG or PNG, max size: 500KB).</p>
+
+  <div class="preview-container"></div>
+
+<label for="fullname">Full Name</label>
+<input type="text" id="fullname" name="fullname">
+<p class="error-msg" id="name-error"
+  style="display:none; color: #ff7070; font-size: 0.8rem; margin-top: -0.5rem; margin-bottom: 1rem;">Please enter your
+  full name.</p>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="example@email.com">
+<p class="error-msg" id="email-error"
+  style="display:none; color: #ff7070; font-size: 0.8rem; margin-top: -0.5rem; margin-bottom: 1rem;">Please enter a
+  valid email address.</p>
+
+<label for="github">GitHub Username</label>
+<input type="text" id="github" name="github" placeholder="@yourusername">
+<p class="error-msg" id="github-error"
+  style="display:none; color: #ff7070; font-size: 0.8rem; margin-top: -0.5rem; margin-bottom: 1rem;">Please enter your
+  GitHub username.</p>
+
+  <button type="submit">Generate My Ticket</button>
+  </div>
+
+<div class="success">
+  <h2>Congrats, <span class="name-gradient">FullName</span>! </h2>
+
+  <p class="success-description">
+    We've emailed your ticket to <span class="email-highlight">@email.com</span>
+    and will send updates in the run up to the event.
+  </p>
+
+  <div class="ticket-container">
+    <div class="ticket-content">
+      <div class="ticket-header">
+        <div class="ticket-event">
+          <img src="/assets/images/logo-full.svg" alt="Coding Conference 2025 logo" /><br>
+          <span class="event-date">Jan 31, 2025 / Austin, TX</span>
+        </div>
+      </div>
+
+      <div class="ticket-user">
+        <img src="" alt="Avatar" class="ticket-avatar" id="ticket-img">
+        <div class="ticket-user-info">
+          <span class="ticket-name" id="ticket-name-display"></span>
+          <div class="ticket-github">
+            <img src="assets/images/icon-github.svg" alt="">
+            <span id="ticket-github-display"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ticket-id"></div>
+  </div>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded with ♥ by <a href="#">Gillan Ropero</a>.
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
