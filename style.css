@@ -1,1 +1,242 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    background-color: #0c082b;
+    background-image: url("assets/images/background-desktop.png");
+    background-size: cover;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    font-size: 1rem;
+    font-family: "Inconsolata", sans-serif;
+    padding: 2rem;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('assets/fonts/Inconsolata-VariableFont_wdth\,wght.ttf');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.form {
+    text-align: left;
+    padding: 2rem;
+    width: 50%;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.144);
+    display: block;
+    padding: .8rem;
+    border-radius: 0.5rem;
+    border: 1px solid #fff;
+    color: #FFF;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: "Inconsolata", sans-serif;
+}
+
+#avatar {
+    display: none;
+}
+
+.upload {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.377);
+    border-radius: 0.5rem;
+    border: 1px solid #FFF;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.upload.drag-over {
+    border: 1px solid rgb(245, 114, 97);
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: 2px dashed rgb(245, 114, 97);
+}
+
+.fileupload {
+    border-radius: 0.5rem;
+    border: 1px dashed #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.img {
+    padding: 0.8rem;
+    background-color: rgba(175, 174, 182, 0.377);
+    border-radius: 0.5rem;
+    border: 1px solid #fff;
+}
+
+.validation-text {
+    font-size: 0.5rem;
+}
+
+.success {
+    display: none;
+    text-align: center;
+    max-width: 600px;
+}
+
+.name {
+    color: rgb(245, 114, 97);
+}
+
+.input-error {
+    border-color: #ff7070 !important;
+}
+
+.success {
+    display: none;
+    text-align: center;
+    max-width: 700px;
+    margin-top: 2rem;
+}
+
+.success-logo {
+    margin-bottom: 2rem;
+}
+
+.name-gradient {
+    background: linear-gradient(90deg, #f57261, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.email-highlight {
+    color: #f57261;
+}
+
+.success-description {
+    margin: 1.5rem auto 3rem;
+    max-width: 500px;
+    color: #d1d0d5;
+}
+
+.ticket-container {
+    background-image: url('assets/images/pattern-ticket.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 280px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    padding: 2rem;
+    text-align: left;
+}
+
+.ticket-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+}
+
+.ticket-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.event-name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.event-date {
+    font-size: 0.8rem;
+    color: #d1d0d5;
+}
+
+.ticket-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ticket-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.ticket-name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.ticket-github {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #d1d0d5;
+    font-size: 0.9rem;
+}
+
+.ticket-id {
+    writing-mode: vertical-rl;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    font-family: "Inconsolata", monospace;
+}
+
+button {
+    background-color: rgb(245, 114, 97);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 800;
+}
+
+button:active {
+    background-color: rgb(225, 97, 81);
+    cursor: pointer;
+    border-bottom: 2px solid rgb(245, 114, 97);
+    margin-top: -2px;
+}
+
+button:hover {
+    background-color: rgb(225, 97, 81);
+    cursor: pointer;
+    border: 2px solid #0c082b;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    display: block;
+    padding-top: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
