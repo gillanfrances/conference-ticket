@@ -19,7 +19,6 @@ $(document).ready(function () {
     });
 
     $uploadArea.on('drop', function (e) {
-        // Get the files from the drop event
         const files = e.originalEvent.dataTransfer.files;
         
         if (files.length > 0) {
